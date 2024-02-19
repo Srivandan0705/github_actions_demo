@@ -1,0 +1,13 @@
+name: test workflow
+on: push
+jobs:
+   npmjobs: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Lint
+        run: npm run lint
+      - name: Run test
+        run: npm run test
+      - name: Run build
+        run: npm run build
+
