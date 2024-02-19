@@ -4,6 +4,8 @@ jobs:
    npmjobs: 
     runs-on: ubuntu-latest
     steps:
+      - name: Getcode
+        run: actions/checkout@v3
       - name: Run Lint
         run: npm run lint
       - name: Run test
